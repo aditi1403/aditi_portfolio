@@ -1,0 +1,579 @@
+:root {
+    --bgblue: #040b14;
+    --grey: #272829;
+    --blue: #149ddd;
+    --darkblue: #173b6c;
+    --royaldarkblue: #050d18;
+
+}
+
+.tue{
+    display: flex;
+}
+
+nav{
+    background-color: var(--grey);
+}
+
+.left{
+    width: 100%;
+    height: 100%;
+    background: var(--bgblue);
+    padding-left: 2em;
+    padding-top: 2em;
+    margin: 0em;
+    width: 20em;
+    overflow: scroll;
+    position: fixed;
+    
+}
+
+.right{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.name{
+    color: whitesmoke;
+    font-size: 0.9em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    margin-left: 2.7em;
+}
+.logos {
+    display: flex;
+    
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    margin-left: 0em;
+  }
+  
+.linkedinlogo,.instagramlogo,.codecheflogo,.githublogo,.hackerranklogo {
+    
+    padding: 10px;
+    margin: 0.5em;
+    background-color:var(--grey);
+    border-radius: 100px;
+    width: 18px;
+    height: 18px;
+}
+
+
+.profilepic{
+    margin-top: 2em;
+    margin-left: 3.5em;
+}
+
+.opt :visited{
+    color: white;
+}
+.opt :link{
+    color: white;
+}
+.opt {
+    padding: 1em;
+    font-size: 1.5em;
+    padding-bottom: 0.3em;
+    padding-left: 0.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bgblue);
+}
+.opt :hover{
+    color:var(--blue) ;
+}
+.navbar{
+    margin-top: 2em;
+    margin-bottom: 3em;
+    background-color: var(--bgblue);
+}
+
+@media(max-width:1024px){
+    #leftnavbar{
+        display: none;
+    }
+}
+
+.home{
+    background-image: url(download.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+    height: 40em;
+    width: 100em;
+    margin-left: 22em;
+}
+
+@media(max-width :1024px){
+    .home{
+        margin-left: 0em;
+        height: 38em;
+    }
+}
+
+.intro{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 14em;
+    margin-left: 12em;
+}
+
+.intro h1{
+    font-size: 3.8vw;
+    float: bottom;
+    margin-top: 0em;
+}
+
+.intro h3{
+    font-size: 1.5em;
+    margin-bottom: 0em;
+}
+
+@media(max-width :1024px){
+    .intro{
+        margin-left: 3.5em;
+    }
+    .intro h1{
+        font-size: 10vw;
+    }
+    .intro h3{
+        font-size: 4vw;
+    }
+}
+
+.resume{
+    margin-left: 3em;
+    background-color: transparent;
+    width: 14em;
+    height: 2em;
+    border: var(--aquagreen) 0.1em solid;
+    border-radius: 0.1em;
+    font-size: 25px;
+    margin-top: 3em;
+    background-color: var(--aquagreen);
+}
+
+.resume a {
+    color:white;
+    margin-top: 0.3em;
+    padding: 0.5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    border: white 0.1em solid;
+    background-color: transparent;
+}
+
+.resume a :hover, :visited{
+    color:black;
+    margin-top: 0.3em;
+    padding: 0.5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    border: white 0.1em solid;
+    background-color: white;
+}
+
+@media(max-width:1024px){
+    .resume{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .resume a{
+        padding: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+
+.about{
+    margin-left: 22em;
+    margin-top: 5em;
+}
+
+.box1 h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    margin-left: 0.5em;
+    color: var(--darkblue);
+}
+
+.box1 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin-left: 0.8em;
+    margin-top: 1em;
+}
+
+.box1{
+    width: 60em;
+    flex: 1;
+    height: 5em;
+}
+
+
+@media(max-width:1024px){
+    .about{
+        margin-left: 7px;
+        margin-top: 55px;
+    }
+    .about h2{
+        font-size: 30px;
+    }
+    .about p{
+        width: 315px;
+        font-size: 15px;
+    }
+}
+
+.skillsh2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    margin-left: 0em;
+    color: var(--darkblue);
+    margin-bottom: 0em;
+}
+
+.rectangleskills{
+    width: 3em;
+    height: 0.2em;
+    background-color: var(--blue);
+    margin-left: 0em;
+    margin-top: 1em;
+}
+
+.skills{
+    margin-left: 23em;
+    margin-top: 10em;
+}
+
+@media(max-width:1024px){
+    .skills{
+        margin-left: 20px;
+    }
+    .skills h2{
+        font-size: 30px;
+    }
+}
+
+.languages h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: var(--royaldarkblue);
+}
+
+.languages{
+    margin-top: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.language{
+    display: flex;
+}
+
+.c,.cpp,.html,.python,.kotlin{
+    flex: 1.5em;
+    margin-top: 0.5em;
+}
+
+.c progress,.cpp progress, .html progress,.python progress,.kotlin progress{
+    height: 1.5em;
+    
+}
+
+@media(max-width:1024px){
+    .languages h2{
+        font-size: 20px;
+    }
+    .language{
+        display: initial;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .c,.cpp,.html,.css,.javascript{
+        margin-top: 15px;
+    }
+    .c progress,.cpp progress, .html progress, .css progress, .javascript progress{
+        width: 300px;
+        height: 30px;
+        color: var(--blue);
+    }
+}
+
+.tool{
+    display: flex;
+    margin-top: 2em;
+}
+
+.adobexd,.figma{
+    flex: 2em;
+}
+
+.adobexd progress,.figma progress{
+    height: 1.5em;
+}
+
+.tools h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    margin-top: 2em;
+    color: var(--royaldarkblue);
+}
+@media(max-width:1024px){
+    .tools{
+        margin-top: 0px;
+    }
+    .tools h2{
+        font-size: 20px;
+    }
+    .tool{
+        display: initial;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .adobexd,.figma{
+        margin-top: 15px;
+    }
+    .adobexd progress,.figma progress{
+        width: 300px;
+        height: 30px;
+        color: var(--blue);
+    }
+}
+.coursework{
+    margin-left: 22em;
+    margin-top: 6em;
+}
+
+.coursework h2{
+    margin-left: 0.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: var(--darkblue);
+    margin-bottom: 0em;
+}
+
+.rectanglecoursework{
+    width: 3em;
+    height: 0.2em;
+    background-color: var(--blue);
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+@media(max-width:1024px){
+    .coursework{
+        margin-left: 7px;
+        margin-top: 40px;
+    }
+    .coursework h2{
+        font-size: 28px;
+    }
+}
+
+.course{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.semester-1{
+    margin-right: 10em;
+}
+
+.semheading{
+    margin-left: 1.5em;
+    color: var(--royaldarkblue);
+}
+
+@media(max-width:1024px){
+    .course{
+        display: initial;
+    }
+    .semester-1{
+        width: 300px;
+    }
+    .semheading{
+        margin-bottom: 0px;
+    }
+}
+
+.experiences{
+    margin-left: 23em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 6em;
+}
+
+.experiences h2{
+    margin-left: 0em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: var(--darkblue);
+    margin-bottom: 0em;
+}
+
+@media(max-width:1024px){
+    .experiences{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .experiences h2{
+        font-size: 25px;
+    }
+}
+
+.achievement{
+    margin-top: 3em;
+}
+.rectangleexperiences{
+    width: 3em;
+    height: 0.2em;
+    background-color: var(--blue);
+    margin-left: 0em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.roles{
+    display: flex;
+}
+
+@media(max-width:1024px){
+    .roles{
+        display: initial;
+    }
+    .esummit h4{
+        width: 400px;
+        margin: 0px;
+        font-weight: 400;
+    }
+    .esummit h3{
+        margin-bottom: 7px;
+    }
+    .esummit p{
+        width: 500px;
+        margin : 0px;
+    }
+    .sn h3{
+        margin-bottom: 0px;
+    }
+    .sn h4{
+        margin: 0px;
+        font-weight: 400;
+    }
+    .sn{
+        margin-top: 30px;
+    }
+}
+
+.esummit{
+    margin-right: 8em;
+}
+
+.branding{
+    margin-top: 2.5em;
+}
+
+.linkbrand{
+    display: flex;
+}
+
+.wixsite{
+    margin-left: 5em;
+}
+
+.brandoc :link,.wixsite :link{
+    background: var(--blue);
+    padding: 0.5em;
+}
+
+.brandoc :hover, .wixsite :hover{
+    background: #78D4F7;
+    padding: 0.5em;
+}
+
+@media(max-width:1024px){
+    .branding{
+        margin-top: 0px;
+    }
+    .branding  h3{
+        margin-top: 17px;
+        margin-bottom: 7px;
+    }
+    .branding h6{
+        margin: 0px;
+        font-weight: 100;
+    }
+    .branding h5{
+        margin: 0px;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    .brandoc{
+        display: none;
+    }
+    .wixsite{
+        display: none;
+    }
+}
+
+.portfolio{
+    margin-left: 23em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portfolio h2{
+    margin-left: 0em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: var(--darkblue);
+    margin-bottom: 0em;
+    margin-top: 2em;
+}
+
+.rectangleabout{
+    width: 3em;
+    height: 0.2em;
+    background-color: var(--blue);
+    margin-left: 1em;
+}
+
+#about{
+    margin-bottom: 0.5em;
+}
+
+.contact{
+    margin-left: 23em;
+}
+
+.contact{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact h2{
+    margin-left: 0em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    color: var(--darkblue);
+    margin-bottom: 0em;
+    margin-top: 2em;
+}
+
+.rectanglecontact{
+    width: 3em;
+    height: 0.2em;
+    background-color: var(--blue);
+    margin-left: 0em;
+    margin-top: 1em;
+}
+
+@media(max-width:1024px){
+    .contact{
+        margin-left: 20px;
+    }
+    .contact h2{
+        font-size: 28px;
+    }
+    .description input[type=text], .namecontact input[type=text]{
+        width: 90%
+    }
+    .namecontact h3{
+        margin-bottom: 0px;
+    }
+}
